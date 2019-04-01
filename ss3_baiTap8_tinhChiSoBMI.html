@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss3_baiTap8_tinhChiSoBMI</title>
+</head>
+<body>
+<script>
+    let height = Number(prompt('nhap chieu cao: '));
+    let weight = Number(prompt('nhap can nang'));
+    let BMI = weight/Math.pow(height, 2);
+    alert ('Chi so BMI la: ' + BMI);
+    if (BMI < 18.5){
+        alert('Underweight');
+    }
+        else if ('18.5 <= BMI < 25.0'){
+            alert('Normal');
+    }
+            else if (25.0 <= BMI < 30.0){
+                alert('Overweight');
+    }
+                else{
+                    alert('Obese');
+    }
+</script>
+</body>
+</html>
